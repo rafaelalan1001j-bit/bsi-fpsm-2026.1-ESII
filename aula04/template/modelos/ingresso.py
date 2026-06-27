@@ -34,3 +34,7 @@ class VIP(Ingresso):
 #
 # Depois, inclua um Cortesia() na venda do main.py e confira o total.
 # ---------------------------------------------------------------
+
+class Cortesia(Ingresso):
+    def preco(self):
+        return 0.0
