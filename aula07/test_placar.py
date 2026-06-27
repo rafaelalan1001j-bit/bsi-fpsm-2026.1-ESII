@@ -16,3 +16,9 @@ def test_vitoria_quando_a_casa_faz_mais_gols():
 #
 # Depois rode  pytest  e confira: devem aparecer 2 passed.
 # ------------------------------------------------------------------
+
+def test_empate_quando_o_placar_e_igual():
+    assert resultado(1, 1) == "empate"
+
+def test_derrota_quando_visitante_faz_mais_gols():
+    assert resultado(0, 2) == "derrota"
