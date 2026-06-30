@@ -38,3 +38,9 @@ def test_senha_sem_maiuscula_avisa():
 #
 #   3. Rode pytest de novo: devem aparecer 5 passed.
 # ------------------------------------------------------------------
+
+def test_senha_sem_minuscula_avisa():
+    assert validar("ABCDEFG1") == ["precisa de uma letra minúscula"]
+
+def test_senha_caso_limite_com_exatos_8_caracteres_passa():
+    assert validar("Abcdefg1") == []
